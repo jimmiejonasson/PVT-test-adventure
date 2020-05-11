@@ -2,6 +2,9 @@
   "adventureTitle": "Battle of Teleplan",
   "length": 2,
   "type": "horror",
+  "numberOfLocations": 5,
+  "descriptionText": "Testadventure for the application Urban Adventures. It´s played around Telefonplan, Stockholm.",
+  "author": "Urban Adventures",
   "adventure": [
     {
       "adventureLocation":

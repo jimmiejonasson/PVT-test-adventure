@@ -7,29 +7,28 @@
   "author": "Urban Adventures",
   "adventure": [
     {
-      "adventureLocation":
-      "location": 01,
+      "location": 1,
       "latitude": 59.2936735,
       "longitude": 17.9921344,
       "trigger": 30,
       "locationEvents": [
         {
-        "id": 01,
+        "id": 1,
         "type": "prompt",
         "message": "Gå till den närmsta gatlyktan. Där finns en galaktisk krypteringsnyckel som gör att Hekate inte kan avlyssna oss.",
         "promptMessage": "Mata in koden på lyktstolpen",
         "correctAnswer": "G8:118",
-        "correctAnswerPath": 02,
-        "wrongAnswerPath": 01
+        "correctAnswerPath": 2,
+        "wrongAnswerPath": 1
         },
         {
-        "id": 02,
+        "id": 2,
         "type": "msg",
         "message": "Bra jobbat. Ni är vid templet. I er värld kan det vara någon annan helig plats av något slag. Det är svårt att säga. I min värld står det ett Ishirs tempel. För att komma vidare måste ni räkna ut hur många trappsteg trappan upp till templet har. När ni vet antalet trappsteg, gå närmare templet...",
-        "path": 03
+        "path": 3
         },
         {
-          "id": 03,
+          "id": 3,
           "type": "prompt",
           "message": "På templet måste det finnas en skylt med tecken, kanske bokstäver. Det är svårt att se för mig. Ta nu det antal trappsteg som ni räknade till. Det är numret på den bokstav som kan visa oss till nästa plats vi behöver vara på. Där kommer vi få vår första ledtråd till Hekates svaghet.",
           "promptMessage": "Vad är det för bokstav?",
@@ -75,7 +74,7 @@
         },
         {
           "id": 9,
-          "_comment": "Skall det kollas om man har en talisman eller skall användarna få svara själva?"
+          "_comment": "Skall det kollas om man har en talisman eller skall användarna få svara själva?",
           "type":"alt",
           "message": "Nej, inte heller det är rätt. Två gånger fel. Jag känner hur vi mister kontakten. Ni måste göra något fort. Tiden rinner ut.",
           "alt1text": "Om ni har en talisman och vill använda den.",
@@ -106,7 +105,7 @@
         {
           "id": 13,
           "type": "endFailure",
-          "message": "Nej, det är Hekate. Hon har hört oss. Allt är förlorat. Hon är här. Jag hör någon i trappan.. det är försent. Må Ishir vaka över oss. Ert äventyr slutar här.",
+          "message": "Nej, det är Hekate. Hon har hört oss. Allt är förlorat. Hon är här. Jag hör någon i trappan.. det är försent. Må Ishir vaka över oss. Ert äventyr slutar här."
         },
         {
           "id": 14,
@@ -124,11 +123,38 @@
           "message": "Jag har onda aningar.Försök att gå så lite som möjligt på Korpmossevägen innan ni når fram till destinationen. Det kan vara en fälla…",
           "adventurePart": 2
         }
-
-
-
       ]
 
+    },
+    {
+      "location": 2,
+      "latitude": 59.2936735,
+      "longitude": 17.9921344,
+      "trigger": 25,
+      "locationEvents": [
+        {
+        "id": 1,
+        "type": "msg",
+        "message": "Stopp! Ni är nära. Var på er vakt.",
+        "path": 2
+        },
+        {
+          "id": 2,
+          "_comment": "Designbeslut, skall man ha en text som vägleder en ibland, med möjlighet att göra saker... skall det vara det som vi kallar promptMessage?",
+          "type": "message",
+          "message": "Gå till den lyktstolpe som har denna kod. G13:246, när ni är framme klicka vidare...",
+          "path": 3
+        },
+        {
+          "id": 3,
+          "_comment": "bilder laddas ner från webb, skapar bara en url, så kan användare skapa egna äventyr med bilder på ett lätt sätt...",
+          "type": "msg",
+          "message": "Stopp! Ni är nära. Var på er vakt.",
+          "image": "url",
+          "imageText": "Titta på bilden",
+          "path": 2
+        }
+      ]
     }
   ]
 

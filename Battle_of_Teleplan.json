@@ -1,0 +1,132 @@
+{
+  "adventureTitle": "Battle of Teleplan",
+  "length": 2,
+  "type": "horror",
+  "adventure": [
+    {
+      "adventureLocation":
+      "location": 01,
+      "latitude": 59.2936735,
+      "longitude": 17.9921344,
+      "trigger": 30,
+      "locationEvents": [
+        {
+        "id": 01,
+        "type": "prompt",
+        "message": "Gå till den närmsta gatlyktan. Där finns en galaktisk krypteringsnyckel som gör att Hekate inte kan avlyssna oss.",
+        "promptMessage": "Mata in koden på lyktstolpen",
+        "correctAnswer": "G8:118",
+        "correctAnswerPath": 02,
+        "wrongAnswerPath": 01
+        },
+        {
+        "id": 02,
+        "type": "msg",
+        "message": "Bra jobbat. Ni är vid templet. I er värld kan det vara någon annan helig plats av något slag. Det är svårt att säga. I min värld står det ett Ishirs tempel. För att komma vidare måste ni räkna ut hur många trappsteg trappan upp till templet har. När ni vet antalet trappsteg, gå närmare templet...",
+        "path": 03
+        },
+        {
+          "id": 03,
+          "type": "prompt",
+          "message": "På templet måste det finnas en skylt med tecken, kanske bokstäver. Det är svårt att se för mig. Ta nu det antal trappsteg som ni räknade till. Det är numret på den bokstav som kan visa oss till nästa plats vi behöver vara på. Där kommer vi få vår första ledtråd till Hekates svaghet.",
+          "promptMessage": "Vad är det för bokstav?",
+          "correctAnswer": "K",
+          "correctAnswerPath": 4,
+          "wrongAnswerPath": 14
+        },
+        {
+          "id": 4,
+          "type": "sound",
+          "soundurl": "battle_of_teleplan/sounds/raven.mp3",
+          "path": 5
+        },
+        {
+          "id": 5,
+          "type": "msg",
+          "message": "Fåglar. Vad kan det betyda? Det är ett tecken… en ledtråd till nästa plats. Vänta… jag väver en hittabesvärjelse.",
+          "path": 6
+        },
+        {
+          "id": 6,
+          "type": "prompt",
+          "message": "Elkazam krinqastir zwelabamm... Jag ser en plats. En gata alldeles i närheten någon som har en anknytning till en fågel. Titta på kartan. Ge mig namnet så talar svarar besvärjelsen om det är den sanna vägen.",
+          "promptMessage": "Vad heter gatan?",
+          "correctAnswer": "Korpmossevägen",
+          "correctAnswerPath": 7,
+          "wrongAnswerPath": 8
+        },
+        {
+          "id": 7,
+          "type": "msg",
+          "message": "Ja, så måste det vara. Här i Terra Nova är Korpen en helig fågel och sägs besitta de mäktigaste magiska krafterna av alla. Här är platsen som min besvärjelse visar. Där finns första ledtråden till Hekates svaghet.",
+          "path": 15
+        },
+        {
+          "id": 8,
+          "type": "prompt",
+          "message": "Nej. Det är inte rätt. Det måste vara något annat. Försök igen.",
+          "promptMessage": "Vad heter gatan?",
+          "correctAnswerPath": 7,
+          "wrongAnswerPath": 9
+
+        },
+        {
+          "id": 9,
+          "_comment": "Skall det kollas om man har en talisman eller skall användarna få svara själva?"
+          "type":"alt",
+          "message": "Nej, inte heller det är rätt. Två gånger fel. Jag känner hur vi mister kontakten. Ni måste göra något fort. Tiden rinner ut.",
+          "alt1text": "Om ni har en talisman och vill använda den.",
+          "alt1path": 10,
+          "alt2text": "Om ni inte har en talisman, eller om ni har en och inte vill använda den.",
+          "alt2path": 11
+        },
+        {
+          "id": 10,
+          "type":"msg",
+          "message": "Ni tar Talismanen och håller upp den i luften. Vinden börjar blåsa kraftigare. Talismanen smulas sakta sönder och följer vinden. Till den är helt borta. I den starka vinden hör ni namnet som ni febrilt har sökt efter...",
+          "path": 12
+        },
+        {
+          "id": 11,
+          "msg": "Att använda en talisman var ett sista hopp. Nu hör ni ett mullrande långt borta i fjärran....",
+          "path": 13
+        },
+        {
+          "id": 12,
+          "_comment": "Är det så att vi ska ha en möjlighet att ha en event som kan visa på kartan också...",
+          "type": "mapLocation",
+          "message": "Korpmossevägen.",
+          "locationlatitude": 59.2952780,
+          "locationlongitude": 17.9902987,
+          "path": 15
+        },
+        {
+          "id": 13,
+          "type": "endFailure",
+          "message": "Nej, det är Hekate. Hon har hört oss. Allt är förlorat. Hon är här. Jag hör någon i trappan.. det är försent. Må Ishir vaka över oss. Ert äventyr slutar här.",
+        },
+        {
+          "id": 14,
+          "type": "prompt",
+          "message": "Nej, det är inte rätt svar. Jag ser ingen öppning i rumsväven. Det måste vara en annan bokstav.",
+          "promptMessage": "Försök igen.",
+          "correctAnswer": "K",
+          "correctAnswerPath": 4,
+          "wrongAnswerPath": 14
+        },
+        {
+          "id": 15,
+          "_comment": "Osäker på hur den skall skrivas Karl.. Vi kanske kan titta på den ikväll. Jag tänker om det i framtiden inte skulle vara ett linjärt äventyr.",
+          "type": "nextAdventurePart",
+          "message": "Jag har onda aningar.Försök att gå så lite som möjligt på Korpmossevägen innan ni når fram till destinationen. Det kan vara en fälla…",
+          "adventurePart": 2
+        }
+
+
+
+      ]
+
+    }
+  ]
+
+}

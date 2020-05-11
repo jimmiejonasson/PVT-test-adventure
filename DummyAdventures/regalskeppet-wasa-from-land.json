@@ -1,0 +1,18 @@
+{
+  "adventureTitle": "Regalskeppet Wasa från land",
+  "length": 2,
+  "type": "history",
+  "numberOfLocations": 4,
+  "descriptionText":"Följ med på Regalskeppet Wasas resa från land",
+  "author": "Wasamuseet",
+  "adventure": [
+    {
+    "adventureLocation":
+    "location": 01,
+    "latitude": 59.327876,
+    "longitude": 18.090152,
+    "trigger": 35,
+    "locationEvents": []
+    }
+    ]
+}

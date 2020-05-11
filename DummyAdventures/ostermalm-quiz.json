@@ -1,0 +1,18 @@
+{
+  "adventureTitle": "Östermalm Quiz",
+  "length": 2.5,
+  "type": "quiz",
+  "numberOfLocations": 25,
+  "descriptionText": "Tipspromenad om de mysiga kvarteren på Östermalm",
+  "author": "Östermalmshallen",
+  "adventure": [
+    {
+    "adventureLocation":
+    "location": 01,
+    "latitude": 59.335735,
+    "longitude": 18.079426,
+    "trigger": 15,
+    "locationEvents": []
+    }
+    ]
+}

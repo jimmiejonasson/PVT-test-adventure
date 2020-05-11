@@ -1,0 +1,18 @@
+{
+  "adventureTitle": "Ajvides Blackeberg",
+  "length": 3.5,
+  "type": "documentary",
+  "numberOfLocations": 31,
+  "descriptionText":"Skildring av Ajvide om hans eget Blackeberg och hur det var på 70 och 80-talet.",
+  "author":"John Ajvide Lindqvist",
+  "adventure": [
+    {
+    "adventureLocation":
+    "location": 01,
+    "latitude": 59.347027,
+    "longitude": 17.876612,
+    "trigger": 10,
+    "locationEvents": []
+    }
+    ]
+}

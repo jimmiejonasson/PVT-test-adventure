@@ -1,0 +1,17 @@
+"adventureTitle": "Landet Ingenstans",
+"length": 1.5,
+"type": "fantasy",
+"numberOfLocations": 8,
+"descriptionText":"Hjälp älvan Silvia att återvända till Landet Ingenstans.",
+"author": "Antonin Artaud",
+"adventure": [
+  {
+  "adventureLocation":
+  "location": 01,
+  "latitude": 59.306660,
+  "longitude": 18.087071,
+  "trigger": 11,
+  "locationEvents": []
+  }
+  ]
+}

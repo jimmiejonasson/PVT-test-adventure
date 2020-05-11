@@ -1,0 +1,16 @@
+{
+  "adventureTitle": "Svenska Akademiens svek",
+  "length": 1.5,
+  "type": "documentary",
+  "numberOfLocations": 8,
+  "adventure": [
+    {
+    "adventureLocation":
+    "location": 01,
+    "latitude": 59.336199,
+    "longitude": 18.072078,
+    "trigger": 15,
+    "locationEvents": []
+    }
+    ]
+}

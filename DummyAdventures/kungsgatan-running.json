@@ -1,7 +1,7 @@
 {
   "adventureTitle": "Kungsgatan Running",
   "length": 1,
-  "type": "exercise",
+  "genre": "exercise",
   "numberOfLocations": 2,
   "descriptionText": "Spring hela Kungsgatan.",
   "author":"Urban Adventures",

@@ -1,7 +1,7 @@
 {
   "adventureTitle": "Svenska Akademiens svek",
   "length": 1.5,
-  "type": "documentary",
+  "genre": "documentary",
   "numberOfLocations": 8,
   "adventure": [
     {

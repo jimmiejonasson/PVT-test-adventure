@@ -1,7 +1,7 @@
 {
   "adventureTitle": "Regalskeppet Wasa från land",
   "length": 2,
-  "type": "history",
+  "genre": "history",
   "numberOfLocations": 4,
   "descriptionText":"Följ med på Regalskeppet Wasas resa från land",
   "author": "Wasamuseet",

@@ -1,7 +1,7 @@
 {
   "adventureTitle": "Battle of Teleplan",
   "length": 2,
-  "type": "horror",
+  "genre": "horror",
   "numberOfLocations": 5,
   "descriptionText": "Testadventure for the application Urban Adventures. It´s played around Telefonplan, Stockholm.",
   "author": "Urban Adventures",
@@ -153,6 +153,13 @@
           "image": "url",
           "imageText": "Titta på bilden",
           "path": 2
+        },
+        {
+          "id": 2,
+          "_comment": "Designbeslut, skall man ha en text som vägleder en ibland, med möjlighet att göra saker... skall det vara det som vi kallar promptMessage?",
+          "type": "message",
+          "message": "Gå till den lyktstolpe som har denna kod. G13:246, när ni är framme klicka vidare...",
+          "path": 3
         }
       ]
     }

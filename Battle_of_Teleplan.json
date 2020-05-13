@@ -5,30 +5,40 @@
   "numberOfParts": 5,
   "descriptionText": "Testadventure for the application Urban Adventures. It´s played around Telefonplan, Stockholm.",
   "author": "Urban Adventures",
-  "adventure": [
+  "parts": [
     {
-      "location": 1,
+      "index": 0,
       "latitude": 59.2936735,
       "longitude": 17.9921344,
       "trigger": 30,
-      "locationEvents": [
+      "events": [
         {
-        "id": 1,
+        "index": 0,
         "type": "prompt",
         "message": "Gå till den närmsta gatlyktan. Där finns en galaktisk krypteringsnyckel som gör att Hekate inte kan avlyssna oss.",
         "promptMessage": "Mata in koden på lyktstolpen",
         "correctAnswer": "G8:118",
-        "correctAnswerPath": 2,
+        "path": 2,
         "wrongAnswerPath": 1
         },
+
         {
-        "id": 2,
-        "type": "msg",
+          "index": 1,
+          "type": "prompt",
+          "promptMessage": "Fel svar prova igen."
+          "correctAnswer": "G8:118",
+          "path": 2,
+          "wrongAnswerPath": 1
+        },
+
+        {
+        "index": 2,
+        "type": "message",
         "message": "Bra jobbat. Ni är vid templet. I er värld kan det vara någon annan helig plats av något slag. Det är svårt att säga. I min värld står det ett Ishirs tempel. För att komma vidare måste ni räkna ut hur många trappsteg trappan upp till templet har. När ni vet antalet trappsteg, gå närmare templet...",
         "path": 3
         },
         {
-          "id": 3,
+          "index": 3,
           "type": "prompt",
           "message": "På templet måste det finnas en skylt med tecken, kanske bokstäver. Det är svårt att se för mig. Ta nu det antal trappsteg som ni räknade till. Det är numret på den bokstav som kan visa oss till nästa plats vi behöver vara på. Där kommer vi få vår första ledtråd till Hekates svaghet.",
           "promptMessage": "Vad är det för bokstav?",
@@ -37,19 +47,20 @@
           "wrongAnswerPath": 14
         },
         {
-          "id": 4,
+          "index": 4,
           "type": "sound",
+          "message": "Ljud av korp spelas upp."
           "soundurl": "battle_of_teleplan/sounds/raven.mp3",
           "path": 5
         },
         {
-          "id": 5,
-          "type": "msg",
+          "index": 5,
+          "type": "message",
           "message": "Fåglar. Vad kan det betyda? Det är ett tecken… en ledtråd till nästa plats. Vänta… jag väver en hittabesvärjelse.",
           "path": 6
         },
         {
-          "id": 6,
+          "index": 6,
           "type": "prompt",
           "message": "Elkazam krinqastir zwelabamm... Jag ser en plats. En gata alldeles i närheten någon som har en anknytning till en fågel. Titta på kartan. Ge mig namnet så talar svarar besvärjelsen om det är den sanna vägen.",
           "promptMessage": "Vad heter gatan?",
@@ -58,14 +69,14 @@
           "wrongAnswerPath": 8
         },
         {
-          "id": 7,
-          "type": "msg",
+          "index": 7,
+          "type": "message",
           "message": "Ja, så måste det vara. Här i Terra Nova är Korpen en helig fågel och sägs besitta de mäktigaste magiska krafterna av alla. Här är platsen som min besvärjelse visar. Där finns första ledtråden till Hekates svaghet.",
           "path": 15
         },
         {
-          "id": 8,
-          "type": "prompt",
+          "index": 8,
+          "type": "message",
           "message": "Nej. Det är inte rätt. Det måste vara något annat. Försök igen.",
           "promptMessage": "Vad heter gatan?",
           "correctAnswerPath": 7,
@@ -73,42 +84,47 @@
 
         },
         {
-          "id": 9,
+          "index": 9,
           "_comment": "Skall det kollas om man har en talisman eller skall användarna få svara själva?",
-          "type":"alt",
+          "type":"multipleChoice",
           "message": "Nej, inte heller det är rätt. Två gånger fel. Jag känner hur vi mister kontakten. Ni måste göra något fort. Tiden rinner ut.",
-          "alt1text": "Om ni har en talisman och vill använda den.",
-          "alt1path": 10,
-          "alt2text": "Om ni inte har en talisman, eller om ni har en och inte vill använda den.",
-          "alt2path": 11
+
+          "choices": [
+            {
+              "text": "Om ni har en talisman och vill använda den",
+              "path": 10
+            },
+            {
+              "text": "Om ni inte har en talisman, eller om ni inte vill använda den."
+              "path": 11
+            }
+          ]
         },
         {
-          "id": 10,
-          "type":"msg",
+          "index": 10,
+          "type":"message",
           "message": "Ni tar Talismanen och håller upp den i luften. Vinden börjar blåsa kraftigare. Talismanen smulas sakta sönder och följer vinden. Till den är helt borta. I den starka vinden hör ni namnet som ni febrilt har sökt efter...",
           "path": 12
         },
         {
-          "id": 11,
+          "index": 11,
+          "type": "message"
           "msg": "Att använda en talisman var ett sista hopp. Nu hör ni ett mullrande långt borta i fjärran....",
           "path": 13
         },
         {
-          "id": 12,
-          "_comment": "Är det så att vi ska ha en möjlighet att ha en event som kan visa på kartan också...",
-          "type": "mapLocation",
-          "message": "Korpmossevägen.",
-          "locationlatitude": 59.2952780,
-          "locationlongitude": 17.9902987,
-          "path": 15
+          "index": 12,
+          "type": "message",
+          "message": "..... Korpmossevägen...",
+          "path": 7
         },
         {
-          "id": 13,
-          "type": "endFailure",
+          "index": 13,
+          "type": "end",
           "message": "Nej, det är Hekate. Hon har hört oss. Allt är förlorat. Hon är här. Jag hör någon i trappan.. det är försent. Må Ishir vaka över oss. Ert äventyr slutar här."
         },
         {
-          "id": 14,
+          "index": 14,
           "type": "prompt",
           "message": "Nej, det är inte rätt svar. Jag ser ingen öppning i rumsväven. Det måste vara en annan bokstav.",
           "promptMessage": "Försök igen.",
@@ -117,45 +133,48 @@
           "wrongAnswerPath": 14
         },
         {
-          "id": 15,
-          "_comment": "Osäker på hur den skall skrivas Karl.. Vi kanske kan titta på den ikväll. Jag tänker om det i framtiden inte skulle vara ett linjärt äventyr.",
-          "type": "nextAdventurePart",
+          "index": 15,
+          "type": "last",
           "message": "Jag har onda aningar.Försök att gå så lite som möjligt på Korpmossevägen innan ni når fram till destinationen. Det kan vara en fälla…",
-          "adventurePart": 2
+          "nextPartIndex": 1
         }
       ]
 
     },
     {
-      "location": 2,
+      "index": 1,
       "latitude": 59.2936735,
       "longitude": 17.9921344,
       "trigger": 25,
       "locationEvents": [
         {
-        "id": 1,
-        "type": "msg",
+        "index": 0,
+        "type": "message",
         "message": "Stopp! Ni är nära. Var på er vakt.",
-        "path": 2
+        "path": 1
         },
         {
-          "id": 2,
-          "_comment": "Designbeslut, skall man ha en text som vägleder en ibland, med möjlighet att göra saker... skall det vara det som vi kallar promptMessage?",
-          "type": "message",
-          "message": "Gå till den lyktstolpe som har denna kod. G13:246, när ni är framme klicka vidare...",
-          "path": 3
+          "id": 1,
+          "type": "multipleChoice",
+          "message": "Gå till den lyktstolpe som har denna kod. G13:246. När ni är framme klicka 'Vi är här'.",
+          "choices": [
+            {
+              "text": "Vi är här.",
+              "path": 2
+            }
+          ]
+
         },
         {
-          "id": 3,
-          "_comment": "bilder laddas ner från webb, skapar bara en url, så kan användare skapa egna äventyr med bilder på ett lätt sätt...",
-          "type": "msg",
+          "index": 2,
+          "type": "image",
           "message": "Stopp! Ni är nära. Var på er vakt.",
           "image": "url",
           "imageText": "Titta på bilden",
           "path": 2
         },
         {
-          "id": 2,
+          "index": 3,
           "_comment": "Designbeslut, skall man ha en text som vägleder en ibland, med möjlighet att göra saker... skall det vara det som vi kallar promptMessage?",
           "type": "message",
           "message": "Gå till den lyktstolpe som har denna kod. G13:246, när ni är framme klicka vidare...",

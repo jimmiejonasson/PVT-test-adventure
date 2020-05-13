@@ -8,6 +8,146 @@
   "parts": [
     {
       "index": 0,
+      "latitude": 59.292869,
+      "longitude": 17.994642,
+      "trigger": 20,
+      "events": [
+        {
+          "index": 0,
+          "type": "message",
+          "message": "Hallå…hallå…hör ni mig?",
+          "path": 1
+        },
+        {
+          "index": 1,
+          "type": "message",
+          "message": "Är det någon där…?",
+          "path": 2
+        },
+        {
+          "index": 2,
+          "type": "message",
+          "message": "Kan ni se mina tankar? Höra vad jag tänker? Jag vet, det låter konstigt. Se tankar. Men jag kan inte beskriva det på något annat sätt.",
+          "path": 3
+        },
+        {
+          "index": 3,
+          "type": "message",
+          "message": "Jag försöker skicka mina tankar genom den här stenen. Det sägs att det är en tankesten och att med hjälp av den kan du skicka dina tankar till någon i tvillingvärlden.",
+          "path": 4
+        },
+        {
+          "index": 4,
+          "type": "message",
+          "message": "Det är en svart slät sten som jag håller handen emot. Jag måste tänka starkt för att den skall fungera och jag tror att den fungerar. För den blir varm emellanåt som om den vill ge mig tecken på att jag har fått kontakt med andra sidan. Jag hoppas det. Att ni är där och ni kan hjälpa oss.",
+          "path": 5
+        },
+        {
+          "index": 5,
+          "type": "multipleChoice",
+          "message": "Är ni där",
+          "choices": [
+            {
+              "text": "Ja.",
+              "path": 6
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "type": "message",
+          "message": "Åååh. Än finns det hopp. Men tiden är knapp. ",
+          "path": 7
+        },
+        {
+          "index": 7,
+          "type": "message",
+          "message": "Jag heter Elkinor och kommer från en värld som heter Terra Nova. Det är en värld som ser ut precis som er värld.",
+          "path": 8
+        },
+        {
+          "index": 8,
+          "type": "message",
+          "message": "Jag heter Elkinor och kommer från en värld som heter Terra Nova. Det är en värld som ser ut precis som er värld.",
+          "path": 9
+        },
+        {
+          "index": 9,
+          "type": "message",
+          "message": "Inte exakt likadan men nästan. Land och hav är likadana städer och byggnader ligger på samma ställen. Men våra världar är ändå olika, det är som om vi lever i två olika tidsåldrar. För er skulle min värld kanske mer påminna om det ni kallar Medeltiden. Men det finns en skillnad…",
+          "path": 10
+        },
+        {
+          "index": 10,
+          "type": "message",
+          "message": "Här finns magi. Magi som är sann. Magi som verkligen fungerar. Det är fantastiskt hur vi kan prata med djur och få de mest fantastiska saker att hända. Få saker att växa. Läka djur och människor som är skadade. Det mesta med magin är gott, men…",
+          "path": 11
+        },
+        {
+          "index": 11,
+          "type": "message",
+          "message": "...det finns också mörk magi. För tre månvarv sedan vävde den mörka magikern Hekate en förbannelse över hela vår värld som gjorde att solen aldrig mer går upp. Allt det som kallas liv håller på att förgås… Vi måste få hjälp.",
+          "path": 12
+        },
+        {
+          "index": 12,
+          "type": "message",
+          "message": "För att störta Hekate och bryta förbannelsen måste vi få veta hennes innersta rädsla och utsätta henne för den. Först då blir vår värld fri. Vi har fått veta att det finns tre ledtrådar i er värld som kan visa oss vägen till hennes största rädsla…",
+          "path": 13
+        },
+        {
+          "index": 13,
+          "type": "multipleChoice",
+          "message": "Det kommer att vara väldigt svårt och kantat med faror men jag hoppas att ni är villiga att hjälpa mig och Terra Nova. Vi kommer att vara evigt tacksamma.Vill ni hjälpa Terra Nova?",
+          "choices": [
+            {
+              "text": "Ja.",
+              "path": 14
+            },
+            {
+              "text": "Nej.",
+              "path": 15
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "type": "message",
+          "message": "Jag är evigt tacksam. Här får ni en magisk talisman som ni kan använda vid ett tillfälle under äventyrets gång. Må Ishir beskyddar er.",
+          "path": 16
+        },
+        {
+          "index": 15,
+          "type": "end",
+          "message": "Jag förstår. Det är en väg kantad av faror inte menad för alla. Jag får söka vidare efter modiga hjältar. Ert äventyr slutar här."
+        },
+        {
+          "index": 16,
+          "type": "itemReceive",
+          "message": "Ishirs talisman har lagts till till era föremål.",
+          "item": "Ishirs talisman",
+          "path": 17
+        },
+        {
+          "index": 17,
+          "type": "itemReceive",
+          "message": "Ishirs talisman har lagts till till era föremål.",
+          "item": "Ishirs talisman",
+          "path": 18
+        },
+        {
+          "index": 18,
+          "type": "last",
+          "message": "Gå till denna plats. Det är nästa steg i ert äventyr.",
+          "nextPartIndex": 1
+        }
+      ]
+    },
+
+
+
+    {
+      "index": 1,
       "latitude": 59.2936735,
       "longitude": 17.9921344,
       "trigger": 30,
@@ -25,7 +165,7 @@
         {
           "index": 1,
           "type": "prompt",
-          "promptMessage": "Fel svar prova igen."
+          "promptMessage": "Fel svar prova igen.",
           "correctAnswer": "G8:118",
           "path": 2,
           "wrongAnswerPath": 1
@@ -49,7 +189,7 @@
         {
           "index": 4,
           "type": "sound",
-          "message": "Ljud av korp spelas upp."
+          "message": "Ljud av korp spelas upp.",
           "soundurl": "battle_of_teleplan/sounds/raven.mp3",
           "path": 5
         },
@@ -95,7 +235,7 @@
               "path": 10
             },
             {
-              "text": "Om ni inte har en talisman, eller om ni inte vill använda den."
+              "text": "Om ni inte har en talisman, eller om ni inte vill använda den.",
               "path": 11
             }
           ]
@@ -108,7 +248,7 @@
         },
         {
           "index": 11,
-          "type": "message"
+          "type": "message",
           "msg": "Att använda en talisman var ett sista hopp. Nu hör ni ett mullrande långt borta i fjärran....",
           "path": 13
         },
@@ -142,7 +282,7 @@
 
     },
     {
-      "index": 1,
+      "index": 2,
       "latitude": 59.2936735,
       "longitude": 17.9921344,
       "trigger": 25,

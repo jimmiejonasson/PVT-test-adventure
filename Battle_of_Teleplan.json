@@ -183,7 +183,7 @@
           "message": "På templet måste det finnas en skylt med tecken, kanske bokstäver. Det är svårt att se för mig. Ta nu det antal trappsteg som ni räknade till. Det är numret på den bokstav som kan visa oss till nästa plats vi behöver vara på. Där kommer vi få vår första ledtråd till Hekates svaghet.",
           "promptMessage": "Vad är det för bokstav?",
           "correctAnswer": "K",
-          "correctAnswerPath": 4,
+          "path": 4,
           "wrongAnswerPath": 14
         },
         {
@@ -205,7 +205,7 @@
           "message": "Elkazam krinqastir zwelabamm... Jag ser en plats. En gata alldeles i närheten någon som har en anknytning till en fågel. Titta på kartan. Ge mig namnet så talar svarar besvärjelsen om det är den sanna vägen.",
           "promptMessage": "Vad heter gatan?",
           "correctAnswer": "Korpmossevägen",
-          "correctAnswerPath": 7,
+          "path": 7,
           "wrongAnswerPath": 8
         },
         {
@@ -219,7 +219,7 @@
           "type": "message",
           "message": "Nej. Det är inte rätt. Det måste vara något annat. Försök igen.",
           "promptMessage": "Vad heter gatan?",
-          "correctAnswerPath": 7,
+          "path": 7,
           "wrongAnswerPath": 9
 
         },
@@ -269,7 +269,7 @@
           "message": "Nej, det är inte rätt svar. Jag ser ingen öppning i rumsväven. Det måste vara en annan bokstav.",
           "promptMessage": "Försök igen.",
           "correctAnswer": "K",
-          "correctAnswerPath": 4,
+          "path": 4,
           "wrongAnswerPath": 14
         },
         {

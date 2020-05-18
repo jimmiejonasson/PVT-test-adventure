@@ -1,3 +1,4 @@
+[
 {
   "adventureTitle": "Battle of Teleplan",
   "length": 2,
@@ -5,6 +6,8 @@
   "numberOfParts": 5,
   "descriptionText": "Testadventure for the application Urban Adventures. It´s played around Telefonplan, Stockholm.",
   "author": "Urban Adventures",
+  "thumbsUp": 0,
+  "thumbsDown": 0,
   "parts": [
     {
       "index": 0,
@@ -325,3 +328,4 @@
   ]
 
 }
+]

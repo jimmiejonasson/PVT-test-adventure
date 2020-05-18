@@ -7,7 +7,7 @@
   "author":"Urban Adventures",
   "thumbsUp": 0,
   "thumbsDown": 0,
-  "adventure": [
+  "parts": [
     {
     "location": 1,
     "latitude": 59.336199,

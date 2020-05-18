@@ -5,10 +5,11 @@
   "numberOfPars": 2,
   "descriptionText": "Spring hela Kungsgatan.",
   "author":"Urban Adventures",
+  "thumbsUp": 0,
+  "thumbsDown": 0,
   "adventure": [
     {
-    "adventureLocation":
-    "location": 01,
+    "location": 1,
     "latitude": 59.336199,
     "longitude": 18.072078,
     "trigger": 15,

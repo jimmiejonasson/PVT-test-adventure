@@ -5,11 +5,11 @@
   "numberOfParts": 31,
   "descriptionText":"Fritt efter Ajvides roman 'Låt den rätte komma in.'",
   "author": "John Ajvide Lindqvist",
-
+  "thumbsUp": 0,
+  "thumbsDown": 0,
   "adventure": [
     {
-    "adventureLocation":
-    "location": 01,
+    "location": 1,
     "latitude": 59.344796,
     "longitude": 17.871977,
     "trigger": 35,

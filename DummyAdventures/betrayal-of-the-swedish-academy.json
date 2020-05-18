@@ -1,12 +1,16 @@
+[
 {
   "adventureTitle": "Svenska Akademiens svek",
   "length": 1.5,
   "genre": "documentary",
   "numberOfParts": 8,
+  "descriptionText":"Skildring av den största krisen i Akademiens historia, som började med hur Akademien svek mig.",
+  "author": "Kulturprofilen",
+  "thumbsUp": 0,
+  "thumbsDown": 0,
   "adventure": [
     {
-    "adventureLocation":
-    "location": 01,
+    "location": 1,
     "latitude": 59.336199,
     "longitude": 18.072078,
     "trigger": 15,
@@ -14,3 +18,4 @@
     }
     ]
 }
+]

@@ -1,3 +1,4 @@
+[
 {
   "adventureTitle": "Ajvides Blackeberg",
   "length": 3.5,
@@ -5,10 +6,11 @@
   "numberOfParts": 31,
   "descriptionText":"Skildring av Ajvide om hans eget Blackeberg och hur det var på 70 och 80-talet.",
   "author":"John Ajvide Lindqvist",
+  "thumbsUp": 0,
+  "thumbsDown": 0,
   "adventure": [
     {
-    "adventureLocation":
-    "location": 01,
+    "location": 1,
     "latitude": 59.347027,
     "longitude": 17.876612,
     "trigger": 10,
@@ -16,3 +18,4 @@
     }
     ]
 }
+]

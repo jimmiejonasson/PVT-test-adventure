@@ -3,18 +3,20 @@
   "adventureTitle": "Kamelflickans hemlighet",
   "length": 1.5,
   "genre": "fantasy",
-  "numberOfParts": 8,
   "descriptionText":"Kamelflickan har stannat till i Stockholm och vill visa er något...",
   "author": "Antonin Artaud",
   "thumbsUp": 0,
   "thumbsDown": 0,
-  "parts": [
+  "events": [
     {
-    "location": 1,
-    "latitude": 59.310988,
-    "longitude": 18.089995,
-    "trigger": 41,
-    "locationEvents": []
+    "index": 0,
+    "type": "location",
+    "location": {
+      "latitude": 59.310988,
+      "longitude": 18.089995,
+      "trigger": 41,
+    },
+    "path": 0
     }
     ]
 }

@@ -3,18 +3,21 @@
 "adventureTitle": "Stockholm i musiken",
 "length": 1.5,
 "genre": "musik",
-"numberOfParts": 8,
 "descriptionText":"10 platser i Stockholm som det sjungs om...",
 "author": "Allsång på Skansen",
 "thumbsUp": 0,
 "thumbsDown": 0,
-"parts": [
+"events": [
   {
-  "location": 1,
-  "latitude": 59.324577,
-  "longitude": 18.027137,
-  "trigger": 11,
-  "locationEvents": []
+  "index": 0,
+  "type": "location",
+  "location": {
+    "latitude": 59.324577,
+    "longitude": 18.027137,
+    "trigger": 11,
+  },
+
+  "path": 0
   }
   ]
 }

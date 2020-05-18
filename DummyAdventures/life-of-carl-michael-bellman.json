@@ -3,18 +3,21 @@
   "adventureTitle": "Carl Michael Bellmans liv",
   "length": 3,
   "genre": "history",
-  "numberOfParts": 15,
   "descriptionText":"Följ med i nationalskaldens Carl Michael Bellmans fotspår genom Gamla stan.",
   "author": "Stockholms stadsmuseum",
   "thumbsUp": 0,
   "thumbsDown": 0,
-  "parts": [
+  "events": [
     {
-    "location": 1,
-    "latitude": 59.322619,
-    "longitude": 18.071586,
-    "trigger": 15,
-    "locationEvents": []
+    "index": 0,
+    "type": "location",
+    "location": {
+      "latitude": 59.322619,
+      "longitude": 18.071586,
+      "trigger": 15,
+    },
+
+    "path": 0
     }
     ]
 }

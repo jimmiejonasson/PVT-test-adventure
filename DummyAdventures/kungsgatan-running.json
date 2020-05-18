@@ -1,3 +1,4 @@
+[
 {
   "adventureTitle": "Kungsgatan Running",
   "length": 1,
@@ -7,13 +8,18 @@
   "author":"Urban Adventures",
   "thumbsUp": 0,
   "thumbsDown": 0,
-  "parts": [
+  "events": [
     {
-    "location": 1,
-    "latitude": 59.336199,
-    "longitude": 18.072078,
-    "trigger": 15,
-    "locationEvents": []
+    "index": 0,
+    "type": "location",
+    "location": {
+      "latitude": 59.336199,
+      "longitude": 18.072078,
+      "trigger": 15,
+    },
+    "path": 0
+
     }
     ]
 }
+]

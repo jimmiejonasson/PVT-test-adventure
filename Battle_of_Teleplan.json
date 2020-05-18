@@ -1,331 +1,329 @@
-[
 {
-  "adventureTitle": "Battle of Teleplan",
-  "length": 2,
-  "genre": "horror",
-  "numberOfParts": 5,
-  "descriptionText": "Testadventure for the application Urban Adventures. It´s played around Telefonplan, Stockholm.",
-  "author": "Urban Adventures",
-  "thumbsUp": 0,
-  "thumbsDown": 0,
-  "parts": [
-    {
-      "index": 0,
-      "latitude": 59.292869,
-      "longitude": 17.994642,
-      "trigger": 20,
-      "events": [
+    "adventureTitle": "Battle of Teleplan",
+    "length": 2,
+    "genre": "fantasy",
+    "descriptionText": "Testadventure for the application Urban Adventures. It´s played around Telefonplan, Stockholm.",
+    "author": "Urban Adventures",
+    "thumbsUp": 0,
+    "thumbsDown": 0,
+    "events": [
         {
-          "index": 0,
-          "type": "message",
-          "message": "Hallå…hallå…hör ni mig?",
-          "path": 1
-        },
-        {
-          "index": 1,
-          "type": "message",
-          "message": "Är det någon där…?",
-          "path": 2
-        },
-        {
-          "index": 2,
-          "type": "message",
-          "message": "Kan ni se mina tankar? Höra vad jag tänker? Jag vet, det låter konstigt. Se tankar. Men jag kan inte beskriva det på något annat sätt.",
-          "path": 3
-        },
-        {
-          "index": 3,
-          "type": "message",
-          "message": "Jag försöker skicka mina tankar genom den här stenen. Det sägs att det är en tankesten och att med hjälp av den kan du skicka dina tankar till någon i tvillingvärlden.",
-          "path": 4
-        },
-        {
-          "index": 4,
-          "type": "message",
-          "message": "Det är en svart slät sten som jag håller handen emot. Jag måste tänka starkt för att den skall fungera och jag tror att den fungerar. För den blir varm emellanåt som om den vill ge mig tecken på att jag har fått kontakt med andra sidan. Jag hoppas det. Att ni är där och ni kan hjälpa oss.",
-          "path": 5
-        },
-        {
-          "index": 5,
-          "type": "multipleChoice",
-          "message": "Är ni där",
-          "choices": [
-            {
-              "text": "Ja.",
-              "path": 6
-            }
-          ]
-        },
-        {
-          "index": 6,
-          "type": "message",
-          "message": "Åååh. Än finns det hopp. Men tiden är knapp. ",
-          "path": 7
-        },
-        {
-          "index": 7,
-          "type": "message",
-          "message": "Jag heter Elkinor och kommer från en värld som heter Terra Nova. Det är en värld som ser ut precis som er värld.",
-          "path": 8
-        },
-        {
-          "index": 8,
-          "type": "message",
-          "message": "Jag heter Elkinor och kommer från en värld som heter Terra Nova. Det är en värld som ser ut precis som er värld.",
-          "path": 9
-        },
-        {
-          "index": 9,
-          "type": "message",
-          "message": "Inte exakt likadan men nästan. Land och hav är likadana städer och byggnader ligger på samma ställen. Men våra världar är ändå olika, det är som om vi lever i två olika tidsåldrar. För er skulle min värld kanske mer påminna om det ni kallar Medeltiden. Men det finns en skillnad…",
-          "path": 10
-        },
-        {
-          "index": 10,
-          "type": "message",
-          "message": "Här finns magi. Magi som är sann. Magi som verkligen fungerar. Det är fantastiskt hur vi kan prata med djur och få de mest fantastiska saker att hända. Få saker att växa. Läka djur och människor som är skadade. Det mesta med magin är gott, men…",
-          "path": 11
-        },
-        {
-          "index": 11,
-          "type": "message",
-          "message": "...det finns också mörk magi. För tre månvarv sedan vävde den mörka magikern Hekate en förbannelse över hela vår värld som gjorde att solen aldrig mer går upp. Allt det som kallas liv håller på att förgås… Vi måste få hjälp.",
-          "path": 12
-        },
-        {
-          "index": 12,
-          "type": "message",
-          "message": "För att störta Hekate och bryta förbannelsen måste vi få veta hennes innersta rädsla och utsätta henne för den. Först då blir vår värld fri. Vi har fått veta att det finns tre ledtrådar i er värld som kan visa oss vägen till hennes största rädsla…",
-          "path": 13
-        },
-        {
-          "index": 13,
-          "type": "multipleChoice",
-          "message": "Det kommer att vara väldigt svårt och kantat med faror men jag hoppas att ni är villiga att hjälpa mig och Terra Nova. Vi kommer att vara evigt tacksamma.Vill ni hjälpa Terra Nova?",
-          "choices": [
-            {
-              "text": "Ja.",
-              "path": 14
+            "index": 0,
+            "type": "location",
+            "location":{
+                "latitude": 59.292869,
+                "longitude": 17.994642,
+                "trigger": 20
             },
-            {
-              "text": "Nej.",
-              "path": 15
-            }
-          ]
-        },
-        {
-          "index": 14,
-          "type": "message",
-          "message": "Jag är evigt tacksam. Här får ni en magisk talisman som ni kan använda vid ett tillfälle under äventyrets gång. Må Ishir beskyddar er.",
-          "path": 16
-        },
-        {
-          "index": 15,
-          "type": "end",
-          "message": "Jag förstår. Det är en väg kantad av faror inte menad för alla. Jag får söka vidare efter modiga hjältar. Ert äventyr slutar här."
-        },
-        {
-          "index": 16,
-          "type": "itemReceive",
-          "message": "Ishirs talisman har lagts till till era föremål.",
-          "item": "Ishirs talisman",
-          "path": 17
-        },
-        {
-          "index": 17,
-          "type": "itemReceive",
-          "message": "Ishirs talisman har lagts till till era föremål.",
-          "item": "Ishirs talisman",
-          "path": 18
-        },
-        {
-          "index": 18,
-          "type": "last",
-          "message": "Gå till denna plats. Det är nästa steg i ert äventyr.",
-          "nextPartIndex": 1
-        }
-      ]
-    },
-
-
-
-    {
-      "index": 1,
-      "latitude": 59.2936735,
-      "longitude": 17.9921344,
-      "trigger": 30,
-      "events": [
-        {
-        "index": 0,
-        "type": "prompt",
-        "message": "Gå till den närmsta gatlyktan. Där finns en galaktisk krypteringsnyckel som gör att Hekate inte kan avlyssna oss.",
-        "promptMessage": "Mata in koden på lyktstolpen",
-        "correctAnswer": "G8:118",
-        "path": 2,
-        "wrongAnswerPath": 1
+            "path": 1
         },
 
         {
-          "index": 1,
-          "type": "prompt",
-          "promptMessage": "Fel svar prova igen.",
-          "correctAnswer": "G8:118",
-          "path": 2,
-          "wrongAnswerPath": 1
+            "index": 1,
+            "type": "message",
+            "message": "Hallå…hallå…hör ni mig?",
+            "path": 2
         },
 
         {
-        "index": 2,
-        "type": "message",
-        "message": "Bra jobbat. Ni är vid templet. I er värld kan det vara någon annan helig plats av något slag. Det är svårt att säga. I min värld står det ett Ishirs tempel. För att komma vidare måste ni räkna ut hur många trappsteg trappan upp till templet har. När ni vet antalet trappsteg, gå närmare templet...",
-        "path": 3
+            "index": 2,
+            "type": "message",
+            "message": "Är det någon där…?",
+            "path": 3
         },
-        {
-          "index": 3,
-          "type": "prompt",
-          "message": "På templet måste det finnas en skylt med tecken, kanske bokstäver. Det är svårt att se för mig. Ta nu det antal trappsteg som ni räknade till. Det är numret på den bokstav som kan visa oss till nästa plats vi behöver vara på. Där kommer vi få vår första ledtråd till Hekates svaghet.",
-          "promptMessage": "Vad är det för bokstav?",
-          "correctAnswer": "K",
-          "path": 4,
-          "wrongAnswerPath": 14
-        },
-        {
-          "index": 4,
-          "type": "sound",
-          "message": "Ljud av korp spelas upp.",
-          "soundurl": "battle_of_teleplan/sounds/raven.mp3",
-          "path": 5
-        },
-        {
-          "index": 5,
-          "type": "message",
-          "message": "Fåglar. Vad kan det betyda? Det är ett tecken… en ledtråd till nästa plats. Vänta… jag väver en hittabesvärjelse.",
-          "path": 6
-        },
-        {
-          "index": 6,
-          "type": "prompt",
-          "message": "Elkazam krinqastir zwelabamm... Jag ser en plats. En gata alldeles i närheten någon som har en anknytning till en fågel. Titta på kartan. Ge mig namnet så talar svarar besvärjelsen om det är den sanna vägen.",
-          "promptMessage": "Vad heter gatan?",
-          "correctAnswer": "Korpmossevägen",
-          "path": 7,
-          "wrongAnswerPath": 8
-        },
-        {
-          "index": 7,
-          "type": "message",
-          "message": "Ja, så måste det vara. Här i Terra Nova är Korpen en helig fågel och sägs besitta de mäktigaste magiska krafterna av alla. Här är platsen som min besvärjelse visar. Där finns första ledtråden till Hekates svaghet.",
-          "path": 15
-        },
-        {
-          "index": 8,
-          "type": "message",
-          "message": "Nej. Det är inte rätt. Det måste vara något annat. Försök igen.",
-          "promptMessage": "Vad heter gatan?",
-          "path": 7,
-          "wrongAnswerPath": 9
 
-        },
         {
-          "index": 9,
-          "_comment": "Skall det kollas om man har en talisman eller skall användarna få svara själva?",
-          "type":"multipleChoice",
-          "message": "Nej, inte heller det är rätt. Två gånger fel. Jag känner hur vi mister kontakten. Ni måste göra något fort. Tiden rinner ut.",
+            "index": 3,
+            "type": "message",
+            "message": "Kan ni se mina tankar? Höra vad jag tänker? Jag vet, det låter konstigt. Se tankar. Men jag kan inte beskriva det på något annat sätt.",
+            "path": 4
+        },
 
-          "choices": [
-            {
-              "text": "Om ni har en talisman och vill använda den",
-              "path": 10
+        {
+            "index": 4,
+            "type": "message",
+            "message": "Jag försöker skicka mina tankar genom den här stenen. Det sägs att det är en tankesten och att med hjälp av den kan du skicka dina tankar till någon i tvillingvärlden.",
+            "path": 5
+        },
+
+        {
+            "index": 5,
+            "type": "message",
+            "message": "Det är en svart slät sten som jag håller handen emot. Jag måste tänka starkt för att den skall fungera och jag tror att den fungerar. För den blir varm emellanåt som om den vill ge mig tecken på att jag har fått kontakt med andra sidan. Jag hoppas det. Att ni är där och ni kan hjälpa oss.",
+            "path": 6
+        },
+
+        {
+            "index": 6,
+            "type": "multipleChoice",
+            "message": "Är ni där",
+            "choices": [
+                {
+                    "text": "Ja.",
+                    "path": 7
+                }
+            ]
+        },
+
+        {
+            "index": 7,
+            "type": "message",
+            "message": "Åååh. Än finns det hopp. Men tiden är knapp. ",
+            "path": 8
+        },
+
+        {
+            "index": 8,
+            "type": "message",
+            "message": "Jag heter Elkinor och kommer från en värld som heter Terra Nova. Det är en värld som ser ut precis som er värld.",
+            "path": 9
+        },
+
+        {
+            "index": 9,
+            "type": "message",
+            "message": "Jag heter Elkinor och kommer från en värld som heter Terra Nova. Det är en värld som ser ut precis som er värld.",
+            "path": 10
+        },
+
+        {
+            "index": 10,
+            "type": "message",
+            "message": "Inte exakt likadan men nästan. Land och hav är likadana städer och byggnader ligger på samma ställen. Men våra världar är ändå olika, det är som om vi lever i två olika tidsåldrar. För er skulle min värld kanske mer påminna om det ni kallar Medeltiden. Men det finns en skillnad…",
+            "path": 11
+        },
+
+        {
+            "index": 11,
+            "type": "message",
+            "message": "Här finns magi. Magi som är sann. Magi som verkligen fungerar. Det är fantastiskt hur vi kan prata med djur och få de mest fantastiska saker att hända. Få saker att växa. Läka djur och människor som är skadade. Det mesta med magin är gott, men…",
+            "path": 12
+        },
+
+        {
+            "index": 12,
+            "type": "message",
+            "message": "...det finns också mörk magi. För tre månvarv sedan vävde den mörka magikern Hekate en förbannelse över hela vår värld som gjorde att solen aldrig mer går upp. Allt det som kallas liv håller på att förgås… Vi måste få hjälp.",
+            "path": 13
+        },
+
+        {
+            "index": 13,
+            "type": "message",
+            "message": "För att störta Hekate och bryta förbannelsen måste vi få veta hennes innersta rädsla och utsätta henne för den. Först då blir vår värld fri. Vi har fått veta att det finns tre ledtrådar i er värld som kan visa oss vägen till hennes största rädsla…",
+            "path": 14
+        },
+
+        {
+            "index": 14,
+            "type": "multipleChoice",
+            "message": "Det kommer att vara väldigt svårt och kantat med faror men jag hoppas att ni är villiga att hjälpa mig och Terra Nova. Vi kommer att vara evigt tacksamma.Vill ni hjälpa Terra Nova?",
+            "choices": [
+                {
+                    "text": "Ja.",
+                    "path": 15
+                },
+                {
+                    "text": "Nej.",
+                    "path": 16
+                }
+            ]
+        },
+
+        {
+            "index": 15,
+            "type": "message",
+            "message": "Jag är evigt tacksam. Här får ni en magisk talisman som ni kan använda vid ett tillfälle under äventyrets gång. Må Ishir beskyddar er.",
+            "path": 17
+        },
+
+        {
+            "index": 16,
+            "type": "end",
+            "message": "Jag förstår. Det är en väg kantad av faror inte menad för alla. Jag får söka vidare efter modiga hjältar. Ert äventyr slutar här."
+        },
+
+        {
+            "index": 17,
+            "type": "itemReceive",
+            "message": "Ishirs talisman har lagts till till era föremål.",
+            "item": "Ishirs talisman",
+            "path": 18
+        },
+
+        {
+            "index": 18,
+            "type": "itemReceive",
+            "message": "Ishirs talisman har lagts till till era föremål.",
+            "item": "Ishirs talisman",
+            "path": 19
+        },
+
+        {
+            "index": 19,
+            "type": "last",
+            "message": "Gå till denna plats. Det är nästa steg i ert äventyr.",
+            "path": 20
+        },
+
+        {
+            "index": 20,
+            "type": "location",
+            "location":{
+                "latitude": 59.2936735,
+                "longitude": 17.9921344,
+                "trigger": 30
             },
-            {
-              "text": "Om ni inte har en talisman, eller om ni inte vill använda den.",
-              "path": 11
-            }
-          ]
+            "path": 21
         },
-        {
-          "index": 10,
-          "type":"message",
-          "message": "Ni tar Talismanen och håller upp den i luften. Vinden börjar blåsa kraftigare. Talismanen smulas sakta sönder och följer vinden. Till den är helt borta. I den starka vinden hör ni namnet som ni febrilt har sökt efter...",
-          "path": 12
-        },
-        {
-          "index": 11,
-          "type": "message",
-          "msg": "Att använda en talisman var ett sista hopp. Nu hör ni ett mullrande långt borta i fjärran....",
-          "path": 13
-        },
-        {
-          "index": 12,
-          "type": "message",
-          "message": "..... Korpmossevägen...",
-          "path": 7
-        },
-        {
-          "index": 13,
-          "type": "end",
-          "message": "Nej, det är Hekate. Hon har hört oss. Allt är förlorat. Hon är här. Jag hör någon i trappan.. det är försent. Må Ishir vaka över oss. Ert äventyr slutar här."
-        },
-        {
-          "index": 14,
-          "type": "prompt",
-          "message": "Nej, det är inte rätt svar. Jag ser ingen öppning i rumsväven. Det måste vara en annan bokstav.",
-          "promptMessage": "Försök igen.",
-          "correctAnswer": "K",
-          "path": 4,
-          "wrongAnswerPath": 14
-        },
-        {
-          "index": 15,
-          "type": "last",
-          "message": "Jag har onda aningar.Försök att gå så lite som möjligt på Korpmossevägen innan ni når fram till destinationen. Det kan vara en fälla…",
-          "nextPartIndex": 1
-        }
-      ]
 
-    },
-    {
-      "index": 2,
-      "latitude": 59.2936735,
-      "longitude": 17.9921344,
-      "trigger": 25,
-      "locationEvents": [
         {
-        "index": 0,
+            "index": 21,
+            "type": "message",
+            "message": "Ni är framme. Här gäller det att hitta en ledtråd som tar er till nästa plats. I min värld skulle ni vara vid Ishirs tempel. Hos er är det en annan helig plats. Med en trappa.. Gå till trappan..",
+            "path": 22,
+
+        },
+
+        {
+            "index": 22,
+            "type": "message",
+            "message": "För att komma vidare måste ni räkna hur många trappsteg trappan upp till templet har. När ni vet antalet trappsteg, gå närmare templet...",
+            "path": 23
+        },
+
+        {
+            "index": 23,
+            "type": "prompt",
+            "message": "På templet måste det finnas en skylt med tecken, kanske bokstäver. Det är svårt att se för mig. Ta nu det antal trappsteg som ni räknade till. Det är numret på den bokstav som kan visa oss till nästa plats vi behöver vara på. Där kommer vi få vår första ledtråd till Hekates svaghet.",
+            "promptMessage": "Vad är det för bokstav?",
+            "correctAnswer": "K",
+            "path": 24,
+            "wrongAnswerPath": 25
+        },
+
+        {
+            "index": 24,
+            "type": "message",
+            "message": "Ljud av korp spelas upp.",
+            "path": 26
+        },
+
+        {
+            "index": 25,
+            "type": "prompt",
+            "message": "Nej, det är inte rätt svar. Jag ser ingen öppning i rumsväven. Det måste vara en annan bokstav.",
+            "promptMessage": "Försök igen.",
+            "correctAnswer": "K",
+            "path": 24,
+            "wrongAnswerPath": 25
+        },
+
+        {
+            "index": 26,
+            "type": "message",
+            "message": "Fåglar. Vad kan det betyda? Det är ett tecken… en ledtråd till nästa plats. Vänta… jag väver en hittabesvärjelse.",
+            "path": 27
+        },
+
+        {
+            "index": 27,
+            "type": "prompt",
+            "message": "Elkazam krinqastir zwelabamm... Jag ser en plats. En gata alldeles i närheten någon som har en anknytning till en fågel. Titta på kartan. Ge mig namnet så talar svarar besvärjelsen om det är den sanna vägen.",
+            "promptMessage": "Vad heter gatan?",
+            "correctAnswer": "Korpmossevägen",
+            "path": 28,
+            "wrongAnswerPath": 29
+        },
+
+        {
+            "index": 28,
+            "type": "message",
+            "message": "Ja, så måste det vara. Här i Terra Nova är Korpen en helig fågel och sägs besitta de mäktigaste magiska krafterna av alla. Här är platsen som min besvärjelse visar. Där finns första ledtråden till Hekates svaghet.",
+            "path": 35
+        },
+
+        {
+            "index": 29,
+            "type": "message",
+            "message": "Nej. Det är inte rätt. Det måste vara något annat. Försök igen.",
+            "promptMessage": "Vad heter gatan?",
+            "path": 28,
+            "wrongAnswerPath": 30
+
+        },
+
+        {
+            "index": 30,
+            "_comment": "Skall det kollas om man har en talisman eller skall användarna få svara själva?",
+            "type":"multipleChoice",
+            "message": "Nej, inte heller det är rätt. Två gånger fel. Jag känner hur vi mister kontakten. Ni måste göra något fort. Tiden rinner ut.",
+
+            "choices": [
+                {
+                    "text": "Om ni har en talisman och vill använda den",
+                    "path": 31
+                },
+                {
+                    "text": "Om ni inte har en talisman, eller om ni inte vill använda den.",
+                    "path": 32
+                }
+            ]
+        },
+
+        {
+            "index": 31,
+            "type":"message",
+            "message": "Ni tar Talismanen och håller upp den i luften. Vinden börjar blåsa kraftigare. Talismanen smulas sakta sönder och följer vinden. Till den är helt borta. I den starka vinden hör ni namnet som ni febrilt har sökt efter...",
+            "path": 33
+        },
+
+        {
+            "index": 32,
+            "type": "message",
+            "msg": "Att använda en talisman var ett sista hopp. Nu hör ni ett mullrande långt borta i fjärran....",
+            "path": 34
+        },
+
+        {
+            "index": 33,
+            "type": "message",
+            "message": "..... Korpmossevägen...",
+            "path": 28
+        },
+
+        {
+            "index": 34,
+            "type": "end",
+            "message": "Nej, det är Hekate. Hon har hört oss. Allt är förlorat. Hon är här. Jag hör någon i trappan.. det är försent. Må Ishir vaka över oss. Ert äventyr slutar här."
+        },
+
+
+
+        {
+            "index": 35,
+            "type": "message",
+            "message": "Jag har onda aningar.Försök att gå så lite som möjligt på Korpmossevägen innan ni når fram till destinationen. Det kan vara en fälla…",
+            "path": 1
+        },
+
+        {
+            "index": 36,
+            "type": "location",
+            "location":{
+                "latitude": 59.2936735,
+                "longitude": 17.9921344,
+                "trigger": 15
+            },
+            "path": 37
+        },
+
+        {
+        "index": 37,
         "type": "message",
         "message": "Stopp! Ni är nära. Var på er vakt.",
-        "path": 1
+        "path": 38
         },
-        {
-          "id": 1,
-          "type": "multipleChoice",
-          "message": "Gå till den lyktstolpe som har denna kod. G13:246. När ni är framme klicka 'Vi är här'.",
-          "choices": [
-            {
-              "text": "Vi är här.",
-              "path": 2
-            }
-          ]
-
-        },
-        {
-          "index": 2,
-          "type": "image",
-          "message": "Stopp! Ni är nära. Var på er vakt.",
-          "image": "url",
-          "imageText": "Titta på bilden",
-          "path": 2
-        },
-        {
-          "index": 3,
-          "_comment": "Designbeslut, skall man ha en text som vägleder en ibland, med möjlighet att göra saker... skall det vara det som vi kallar promptMessage?",
-          "type": "message",
-          "message": "Gå till den lyktstolpe som har denna kod. G13:246, när ni är framme klicka vidare...",
-          "path": 3
-        }
-      ]
-    }
-  ]
-
+        
+    ]
 }
-]
